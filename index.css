@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 10px;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f0f0, #d8cfc4);
+    justify-content: center;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('BG_image.jpg');
+    background-size: cover;
+    /* Makes the image cover the entire area */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.container {
+    width: 850px;
+    padding: 30px 35px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 5px solid #fb00ff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.container.disable .editor-panel,
+.container.disable .controls .reset-filter,
+.container.disable .controls .save-img {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.container h2 {
+    margin-top: -8px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.container h2:hover {
+    color: #fb00ff;
+}
+
+.container .wrapper {
+    display: flex;
+    margin: 20px 0;
+    min-height: 335px;
+    transition: background 0.3s ease;
+}
+
+.wrapper:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.wrapper .editor-panel {
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper .editor-panel:hover {
+    background: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editor-panel .title {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.editor-panel .title:hover {
+    color: #fb00ff;
+}
+
+.editor-panel .options,
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.editor-panel button,
+.controls button {
+    flex: 1;
+    min-width: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #5372f0;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.editor-panel button:hover,
+.controls button:hover {
+    background: #4050b5;
+    transform: scale(1.05);
+}
+
+.editor-panel button:active,
+.controls button:active {
+    background: #3540a0;
+}
+
+.filter button.active {
+    color: #fff;
+    border-color: #5372f0;
+    background: #5372f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editor-panel button:hover {
+    background: #f5f5f5;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+.filter .slider {
+    margin-top: 12px;
+}
+
+.filter .slider .filter-info {
+    display: flex;
+    color: #464646;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.filter .slider input {
+    width: 100%;
+    height: 5px;
+    accent-color: #5372f0;
+    transition: accent-color 0.3s ease;
+}
+
+.filter .slider input:hover {
+    accent-color: #fb00ff;
+}
+
+.editor-panel .rotate {
+    margin-top: 20px;
+}
+
+.editor-panel .rotate button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 3px);
+    font-size: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.rotate .options button:nth-child(3),
+.rotate .options button:nth-child(4) {
+    font-size: 24px;
+}
+
+.rotate .options button:hover {
+    background: #5372f0;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.wrapper .preview-img {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-img:hover {
+    border: 3px solid #5372f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-img img {
+    max-width: 490px;
+    max-height: 335px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.preview-img:hover img {
+    transform: scale(1.02);
+}
+
+.controls button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.controls .reset-filter {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.controls .reset-filter:hover {
+    color: #fff;
+    background: #6c757d;
+    transform: scale(1.05);
+}
+
+.controls .choose-img {
+    background: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.controls .choose-img:hover {
+    background: #5a6268;
+    transform: scale(1.05);
+}
+
+.controls .save-img {
+    margin-left: 10px;
+    background: #5372f0;
+    border: 1px solid #5372f0;
+}
+
+.controls .save-img:hover {
+    background: #4e66e5;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 25px;
+    }
+
+    .container .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    .wrapper .editor-panel {
+        width: 100%;
+    }
+
+    .wrapper .preview-img {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .controls .row {
+        width: 100%;
+    }
+
+    .controls .row .save-img {
+        margin-left: 0px;
+    }
+}
