@@ -1,111 +1,86 @@
 Image Editing Application
 
 Overview
+The Image Editing App is a web-based tool that empowers users to perform a variety of image editing tasks. This application supports features such as adjusting brightness, saturation, and contrast, as well as applying filters. Designed to preserve image pixel quality, it ensures that all edits maintain the sharpness and clarity of the original images.
 
-Image Editing App is a web-based application that allows users to perform various image editing functions, including adjusting brightness, saturation, contrast, and applying filters. This application is designed to maintain the pixel quality of images, ensuring sharp and clear edits.
-
-This project was created using JavaScript and showcases various image manipulation techniques. It was developed as a challenge to improve my JavaScript skills and learn how to apply them effectively in a real-world application.
+Developed as a JavaScript challenge, this project showcases advanced image manipulation techniques and serves as a practical demonstration of how to apply JavaScript in real-world applications.
 
 Table of Contents
-
-1. Features
-2. Technologies Used
-3. Project Structure
-4. Installation
-5. Usage
-6. Code Explanation
-   - HTML
-   - CSS
-   - JavaScript
-7. License
-8. Acknowledgments
-
 Features
-
-- Adjust Brightness, Saturation, and Contrast: Fine-tune the image’s appearance.
-- Apply Filters: Add effects like Sepia and Grayscale.
-- Image Rotation and Flipping:** Rotate the image and flip it horizontally or vertically.
-- Image Saving: Save the edited image without losing pixel quality.
-
 Technologies Used
-
-- HTML5 for structure
-- CSS3 for styling
-- JavaScript for functionality
-- Canvas API for image processing
-
 Project Structure
-
-```
-/image-editing-app
-│
-├── index.html        # The main HTML file
-├── style.css         # The stylesheet for styling
-├── script.js         # The JavaScript file with functionality
-├── README.md         # Project documentation
-└── /images           # Folder for images used in the project
-```
-
 Installation
-
-1. Clone the Repository:
-
-   ```
-   git clone https://github.com/AyushKatiyar13/Image-Editing-App.git
-   ```
-
-2. Navigate to the Project Directory:
-
-   ```
-   cd Image-Editing-App
-   ```
-
-3. Open `index.html` in a Web Browser:
-
-   Simply open the `index.html` file with your preferred web browser to run the application locally.
-
 Usage
-
-1. Load an Image: Click the "Choose Image" button to upload an image from your device.
-2. Apply Filters and Adjustments: Use the filter buttons and sliders to modify the image.
-3. Rotate and Flip: Use the rotation and flip options to adjust the image orientation.
-4. Save the Edited Image: Click the "Save Image" button to download the edited image in its full quality.
-
 Code Explanation
-
 HTML
-
-- index.html: Contains the structure of the web application. Includes a file input for image upload, buttons for filters, sliders for adjustments, and placeholders for displaying the image and filter information.
-
 CSS
-
-- **style.css:** Defines the layout and styling of the application. Styles include positioning for the image, buttons, and sliders, as well as hover effects and responsive design.
-
 JavaScript
-
-- script.js: Contains the core functionality of the image editing app.
-
-  - Variables: Define initial filter values and transformation states.
-  
-  - loadImage(): Handles image loading and displays it in the preview area.
-  
-  - applyFilter(): Applies the selected filter and transformations to the image.
-  
-  - updateFilter(): Updates the filter values based on user input from sliders.
-  
-  - rotateOptions: Handles image rotation and flipping.
-  
-  - resetFilter(): Resets all filters and transformations to their default values.
-  
-  - saveImage(): Saves the edited image with the applied filters and transformations.
-
 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Acknowledgments
 
-- ChatGPT: For guidance and support with JavaScript functions and techniques.
-- Online Resources: For various tutorials and references used during development.
+Features
+Adjust Brightness, Saturation, and Contrast: Fine-tune the image’s appearance with precision.
+Apply Filters: Add stylish effects such as Sepia and Grayscale to enhance images.
+Image Rotation and Flipping: Rotate and flip images horizontally or vertically for desired orientation.
+Image Saving: Download the edited image while preserving its original pixel quality.
 
-Thank you😊
+Technologies Used
+HTML5: Provides the structure of the application.
+CSS3: Handles the styling and layout.
+JavaScript: Implements the core functionality and interactivity.
+Canvas API: Facilitates image processing and manipulation.
+
+Project Structure
+bash
+Copy code
+/image-editing-app
+│
+├── index.html        # Main HTML file
+├── style.css         # Stylesheet for visual design
+├── script.js         # JavaScript file with core functionality
+├── README.md         # Documentation for the project
+└── /images           # Folder for project images
+
+Installation
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/AyushKatiyar13/Image-Editing-App.git
+Navigate to the Project Directory:
+
+bash
+Copy code
+cd Image-Editing-App
+Open index.html in a Web Browser:
+
+Double-click the index.html file to run the application locally in your preferred web browser.
+
+Usage
+Load an Image: Click the "Choose Image" button to upload an image from your device.
+Apply Filters and Adjustments: Use the available filter buttons and sliders to modify the image.
+Rotate and Flip: Adjust the image orientation using rotation and flip options.
+Save the Edited Image: Click the "Save Image" button to download the edited image with all applied filters and transformations.
+
+Code Explanation
+HTML
+index.html: Defines the application’s structure. Includes elements for file input, filter buttons, adjustment sliders, and placeholders for the image preview and filter details.
+
+CSS
+style.css: Manages the visual layout and design of the application. It includes styling for image positioning, button aesthetics, slider appearance, and responsive design.
+
+JavaScript
+script.js: Implements the application’s functionality, including:
+Variables: Define initial filter settings and transformation states.
+loadImage(): Manages image loading and display.
+applyFilter(): Applies selected filters and transformations.
+updateFilter(): Updates filter values based on slider input.
+rotateOptions: Handles image rotation and flipping.
+resetFilter(): Resets all adjustments to default settings.
+saveImage(): Saves the edited image while preserving its quality.
+
+Acknowledgments
+ChatGPT: For valuable guidance and support with JavaScript functions and techniques.
+Online Resources: For tutorials and references utilized during development.
+
+Thankyou 
