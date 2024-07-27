@@ -1,4 +1,4 @@
-Image Editing Application
+Image Editing Application:
 
 Overview
 The Image Editing App is a web-based tool that empowers users to perform a variety of image editing tasks. This application supports features such as adjusting brightness, saturation, and contrast, as well as applying filters. Designed to preserve image pixel quality, it ensures that all edits maintain the sharpness and clarity of the original images.
